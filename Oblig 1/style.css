@@ -1,0 +1,122 @@
+body {
+  margin: 1px;
+  display: grid;
+  column-gap: 0px;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-areas:
+    "header header header header  header  "
+    ". main main main ."
+    ". main main main ."
+    ". main main main ."
+    ". main main main .";
+  font-family: sans-serif;
+}
+
+header {
+  grid-area: header;
+  margin-bottom: 5em;
+}
+main {
+  grid-area: main;
+}
+.flexNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10% 0 10%;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+.flexColumnInner {
+  display: flex;
+  flex-direction: column;
+}
+.articleStyling {
+  display: block;
+  box-shadow: 0 5px 10px 1px #e3faf6;
+  border-radius: 10px;
+  padding: 20px;
+}
+.bolder {
+  font-weight: 900;
+}
+.inputLabel {
+  margin: 20px 0 10px 0;
+}
+.dropShadowNav {
+  box-shadow: 0 -20px 30px 5px rgb(143, 143, 143);
+}
+
+.borderInput {
+  border-radius: 5px;
+  border: 1px solid rgb(146, 146, 146);
+  padding: 10px;
+}
+
+.width100 {
+  width: 100%;
+}
+.width30 {
+  width: 30%;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.gridToDo {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 800px) {
+  .gridToDo {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: auto;
+  }
+}
+
+.button {
+  align-self: flex-end;
+  background-color: #56d4c2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #6ce6d5;
+}
+
+.buttonAdd {
+  margin: 20px 0 0 0;
+  padding: 10px 50px 10px 50px;
+  font-size: 1.2em;
+}
+.buttonToDo {
+  padding: 5px 10px 5px 10px;
+  font-size: 0.8em;
+}
+
+.userFont {
+  font-size: 1.3em;
+}
+.flexContainerToDo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h2 {
+  margin: 80px 30px 50px 0;
+}
+
+footer {
+  margin: 100px;
+}
