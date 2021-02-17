@@ -21,7 +21,7 @@ try {
 
   (function UseLetOrConst() {
     // Use let (or const) instead of var to make the function succeed.
-    var x = 1;
+    let x = 1;
     if (true) {
       let x = 2;
     }
@@ -54,8 +54,7 @@ try {
   (function UseDefaultParameters() {
     // Correct the syntax errors in the function.
     function hello(who = "World") {
-      //   return "Hello " + who + "!";
-      return `Hello ${who}!`;
+      return "Hello " + who + "!";
     }
 
     // Don't make changes below this line
