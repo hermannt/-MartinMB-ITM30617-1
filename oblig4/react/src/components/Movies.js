@@ -11,14 +11,12 @@ const Movies = () => {
 
   return (
     <>
-      {movies?.length > 0 ? <p>{JSON.stringify(movies)}</p> : null};
+      {movies?.length > 0 ? <p>{JSON.stringify(movies)}</p> : null}
       <button type="button" onClick={handleClick}>
         Button
       </button>
     </>
   );
 };
-
-// const movie = (props) => {};
 
 export default Movies;
