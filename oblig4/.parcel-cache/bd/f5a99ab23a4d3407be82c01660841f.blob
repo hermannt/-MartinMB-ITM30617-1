@@ -1,0 +1,22 @@
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = App;
+var _Movies = _interopRequireDefault(require("./components/Movies.js"));
+var _jsxRuntime = require("react/jsx-runtime");
+function App() {
+  return (
+    /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h1", {
+        children: "Welcome to React Parcel Micro App!"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+        children: "Hard to get more minimal than this React app."
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Movies["default"], {})]
+    })
+  );
+}
+_c = App;
+var _c;
+$RefreshReg$(_c, "App");

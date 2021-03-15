@@ -1,0 +1,21 @@
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = App;
+var _Movies = _interopRequireDefault(require("./components/Movies.js"));
+var _jsxRuntime = require("react/jsx-runtime");
+function App() {
+  return (
+    /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Movies["default"], {
+        title: title,
+        actor: actor
+      })
+    })
+  );
+}
+_c = App;
+var _c;
+$RefreshReg$(_c, "App");

@@ -1,0 +1,30 @@
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/slicedToArray"));
+var _jsxRuntime = require("react/jsx-runtime");
+var _s = $RefreshSig$();
+var Movies = function Movies() {
+  _s();
+  var _useState = useState(""), _useState2 = (0, _slicedToArray2["default"])(_useState, 2), dataFromSanity = _useState2[0], setDataFromSanity = _useState2[1];
+  return (
+    /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
+          onClick: handleClick,
+          href: "https://i.imgur.com/Su3zpIV.png",
+          children: "Button"
+        })
+      })
+    })
+  );
+};
+_s(Movies, "bQBIVSOqO6VJX7QLqNzYM9wiQ30=");
+_c = Movies;
+var _default = Movies;
+exports["default"] = _default;
+var _c;
+$RefreshReg$(_c, "Movies");

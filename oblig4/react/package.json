@@ -1,0 +1,42 @@
+{
+  "name": "alternative3",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@parcel/optimizer-cssnano": "2.0.0-nightly.598",
+    "@parcel/optimizer-htmlnano": "2.0.0-nightly.598",
+    "@parcel/packager-css": "2.0.0-nightly.598",
+    "@parcel/packager-html": "2.0.0-nightly.598",
+    "@parcel/transformer-css": "2.0.0-nightly.598",
+    "@parcel/transformer-html": "2.0.0-nightly.598",
+    "@parcel/transformer-postcss": "2.0.0-nightly.598",
+    "@parcel/transformer-posthtml": "2.0.0-nightly.598",
+    "@parcel/transformer-sass": "2.0.0-nightly.598",
+    "babel-eslint": "10.1.0",
+    "babel-preset-nano-react-app": "^0.1.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-module-resolver": "^1.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "parcel": "^2.0.0-beta.1",
+    "postcss": "^8.2.1",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.7"
+  }
+}
