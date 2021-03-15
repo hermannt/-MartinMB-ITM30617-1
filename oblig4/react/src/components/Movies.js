@@ -1,18 +1,24 @@
-const Movies = () => {
-  // const [state, setState] = useState('');
+import { useState } from 'react';
+import { getMovies } from '../utils/movieService';
 
-  function handleClick(e) {
-    e.preventDefault();
-  }
+const Movies = () => {
+  const [movies, setMovies] = useState([]);
+
+  const handleClick = async () => {
+    const data = await getMovies();
+    setMovies(data);
+  };
+
   return (
     <>
-      <button type="submit">
-        <a onClick={handleClick} href="https://i.imgur.com/Su3zpIV.png">
-          Button
-        </a>
+      {movies?.length > 0 ? <p>{JSON.stringify(movies)}</p> : null};
+      <button type="button" onClick={handleClick}>
+        Button
       </button>
     </>
   );
 };
+
+// const movie = (props) => {};
 
 export default Movies;
