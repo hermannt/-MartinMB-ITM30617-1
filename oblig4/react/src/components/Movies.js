@@ -8,7 +8,6 @@ const Movies = () => {
   const handleClick = async () => {
     const movies = await getMovies();
     setMovies(movies);
-    movies.map(movie => Movie)
   };
 
   return (
