@@ -1,22 +1,31 @@
 import { useState } from 'react';
-import { getMovies } from '../utils/movieService';
+import { getTitle, getActor } from '../utils/movieService';
+import Movie from './Movie.js';
 
 const Movies = () => {
-  const [movies, setMovies] = useState([]);
+  const [actor, setActors] = useState([]);
+  const [title, setTitles] = useState([]);
 
   const handleClick = async () => {
-    const data = await getMovies();
-    setMovies(data);
+    const actors = await getActor();
+    setActors(actors);
+    const titles = await getTitle();
+    setTitles(titles);
+    // <Movie title={titles} actor={actors} />;
   };
 
   return (
     <>
-      {movies?.length > 0 ? <p>{JSON.stringify(movies)}</p> : null}
+      <Movie title={title} actor={actor} />;
+      {/* {actors?.length > 0 ? <p>{JSON.stringify(actors)}</p> : null}
+      {titles?.length > 0 ? <p>{JSON.stringify(titles)}</p> : null} */}
       <button type="button" onClick={handleClick}>
-        Button
+        Show movies
       </button>
     </>
   );
 };
 
 export default Movies;
+
+// title={title} actor={actor}

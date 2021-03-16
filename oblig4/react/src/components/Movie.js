@@ -1,7 +1,11 @@
-// import Movies from 'Movies.js';
+function Movie(titles, actors) {
+  return (
+    <>
+      {titles.map((movie) => (
+        <Movie title={titles} actor={actors} />
+      ))}
+    </>
+  );
+}
 
-// return  {
-//     movies?.length > 0 ? <p>{JSON.stringify(movies)}</p> : null;
-// };
-
-// export default Movie;
+export default Movie;
